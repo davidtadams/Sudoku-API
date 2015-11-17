@@ -1,10 +1,11 @@
 var express = require('express');
 var app = express();
+var cors = require('cors');
 var data = require('./app/models/boards').boardData;
-
 var port = process.env.PORT || 8080;
-
 var router = express.Router();
+
+app.use(cors());
 
 router.get('/', function(req, res) {
   res.send('Request in correct API format.');
