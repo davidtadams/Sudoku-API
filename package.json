@@ -2,7 +2,7 @@
   "name": "sudoku-api",
   "version": "1.0.0",
   "description": "API to get sudoku puzzle configurations",
-  "main": "app.js",
+  "main": "server.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/davidtadams/Sudoku-API.git"
@@ -17,6 +17,6 @@
     "express": "^4.13.3"
   },
   "engines": {
-    "node": "4.2.1"
+    "node": "^4.2.1"
   }
 }
