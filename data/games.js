@@ -1,4 +1,4 @@
-var games = {
+var boardData = {
   "easy": [
     {
       "number": 1,
@@ -84,3 +84,5 @@ var games = {
     }
   ]
 };
+
+exports.boardData = boardData;
