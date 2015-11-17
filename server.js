@@ -6,9 +6,9 @@ var port = process.env.PORT || 8080;
 
 var router = express.Router();
 
-// router.get('/', function(req, res) {
-//   res.send('Request in correct API format.');
-// });
+router.get('/', function(req, res) {
+  res.send('Request in correct API format.');
+});
 
 router.get('/:difficulty', function(req, res) {
   if (req.params.difficulty === 'easy'){
@@ -28,10 +28,3 @@ router.get('/:difficulty', function(req, res) {
 app.use('/api', router);
 app.listen(port);
 console.log('Listening on port: ' + port);
-
-// var server = app.listen(3000, function() {
-//   var host = server.address().address;
-//   var port = server.address().port;
-//
-//   console.log('App listening at http://%s:%s', host, port);
-// })
