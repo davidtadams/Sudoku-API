@@ -8,12 +8,15 @@
     "url": "git+https://github.com/davidtadams/Sudoku-API.git"
   },
   "author": "davidtadams",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/davidtadams/Sudoku-API/issues"
   },
   "homepage": "https://github.com/davidtadams/Sudoku-API#readme",
   "dependencies": {
     "express": "^4.13.3"
+  },
+  "engines": {
+    "node": "4.4.1"
   }
 }
