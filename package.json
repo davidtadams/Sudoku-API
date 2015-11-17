@@ -1,0 +1,19 @@
+{
+  "name": "sudoku-api",
+  "version": "1.0.0",
+  "description": "API to get sudoku puzzle configurations",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/davidtadams/Sudoku-API.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/davidtadams/Sudoku-API/issues"
+  },
+  "homepage": "https://github.com/davidtadams/Sudoku-API#readme"
+}
