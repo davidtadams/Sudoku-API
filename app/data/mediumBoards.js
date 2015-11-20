@@ -25,7 +25,7 @@ var mediumBoards = [
       [7, 2, 1, 8, 3, 9, 4, 6, 5]
     ]
   },
-
+  {
     "number": 2,
     "difficulty": "medium",
     "board": [
