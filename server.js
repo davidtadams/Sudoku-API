@@ -1,7 +1,9 @@
 var express = require('express');
 var app = express();
 var cors = require('cors');
-var data = require('./app/models/boards').boardData;
+var easy = require('./app/data/easyBoards').easyBoards;
+var medium = require('./app/data/mediumBoards').mediumBoards;
+var hard = require('./app/data/hardBoards').hardBoards;
 var port = process.env.PORT || 8080;
 var router = express.Router();
 
@@ -13,13 +15,13 @@ router.get('/', function(req, res) {
 
 router.get('/:difficulty', function(req, res) {
   if (req.params.difficulty === 'easy'){
-    res.json(data['easy'][0]);
+    res.json(easy[0]);
   }
   else if (req.params.difficulty === 'medium') {
-    res.json(data['medium'][0]);
+    res.json(medium[0]);
   }
   else if (req.params.difficulty === 'hard') {
-    res.json(data['hard'][0]);
+    res.json(hard[0]);
   }
   else {
     res.json({error: 'Request is not valid.'});
