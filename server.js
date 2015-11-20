@@ -15,13 +15,13 @@ router.get('/', function(req, res) {
 
 router.get('/:difficulty', function(req, res) {
   if (req.params.difficulty === 'easy'){
-    res.json(easy[0]);
+    res.json(easy[Math.floor(Math.random() * easy.length)]);
   }
   else if (req.params.difficulty === 'medium') {
-    res.json(medium[0]);
+    res.json(medium[Math.floor(Math.random() * medium.length)]);
   }
   else if (req.params.difficulty === 'hard') {
-    res.json(hard[0]);
+    res.json(hard[Math.floor(Math.random() * hard.length)]);
   }
   else {
     res.json({error: 'Request is not valid.'});
